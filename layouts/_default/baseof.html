@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html lang="en-us" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -15,6 +15,16 @@
   <!-- <header>
     {{ partial "header.html" . }}
   </header> -->
+  <!-- Language Switcher -->
+  <div class="container py-2 d-flex justify-content-end">
+    <div class="dropdown">
+      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ .Site.Language.LanguageName }}
+      </button>
+      {{ partial "language-switcher.html" . }}
+    </div>
+  </div>
+  <!-- End Language Switcher -->
   <main>
     {{ block "main" . }}{{ end }}
   </main>

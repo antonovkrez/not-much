@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
 body {
   background-color: var(--bg-color) !important;
@@ -7,7 +6,7 @@ body {
 
 body, main {
   height: 100%;
-  font-family: 'Literata', serif !important;
+  font-family: 'Fira Code', serif !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: .95em;
@@ -79,7 +78,7 @@ ul > li:has(input[type=checkbox]) {
 }
 
 code {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Fira Code', serif !important;
 }
 
 code:not(.highlight *) {
@@ -102,7 +101,7 @@ mark {
 
 kbd {
   background-color: var(--bg-variant) !important;
-  font-family: 'Red Hat Mono', monospace !important;
+  font-family: 'Fira Code', monospace !important;
   font-weight: bold;
 }
 
@@ -259,7 +258,7 @@ li > input[type=checkbox] {
 }
 
 .toc {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Fira Code', serif !important;
   margin-right: 1.5rem;
   opacity: 0.2;
   /* Opacity Transition */
@@ -286,7 +285,7 @@ li > input[type=checkbox] {
 }
 
 .badge {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Fira Code', serif !important;
   font-weight: 600 !important;
 }
 

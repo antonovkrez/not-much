@@ -1,0 +1,12 @@
+<ul class="dropdown-menu">
+    {{ range $.Site.Home.AllTranslations }}
+      {{ if ne .Lang $.Site.Language.Lang }} <!-- Пропускаем текущий язык -->
+        <li>
+          <a class="dropdown-item" href="{{ .RelPermalink }}">
+            {{ .Language.LanguageName }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  
